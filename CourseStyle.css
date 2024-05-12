@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+ :root {
+    --orange: #ffa500;
+    --mycolor: #0D1456;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+  
+   
+    
+}
+
+
+ ::selection {
+    background: var(--orange);
+    color: white;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.heading {
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.heading span {
+    font-size: 3.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--mycolor);
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--orange);
+    color: #ffffff;
+    padding: .8rem 3rem;
+    cursor: pointer;
+    border-radius: 3rem;
+    font-size: 1.7rem;
+}
+
+.btn:hover {
+    background: var(--mycolor);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background: #0D1456;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 20%;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #ffff;
+    margin-left: 10px;
+}
+
+header .logo span {
+    color: var(--orange);
+}
+
+header .navbar a {
+    color: #ffffff;
+    font-size: 2rem;
+    margin: .8rem;
+}
+
+header .navbar a {
+    color: #ffffff;
+    font-size: bold;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+header .navbar a:hover {
+    color: var(--orange);
+}
+
+header .icons i {
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+header .icons i:hover {
+    color: var(--orange);
+}
+
+.login-form-container {
+    position: fixed;
+    top: -120%;
+    left: 0;
+    z-index: 10000;
+    min-height: 100vh;
+    width: 100%;
+    background: #0D1456;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form-container.active {
+    top: 0;
+}
+
+.login-form-container form {
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    background: #FFFFFF;
+    width: 50rem;
+}
+
+.login-form-container form h3 {
+    font-size: 3rem;
+    color: #0D1456;
+    text-transform: unset;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.login-form-container form .box {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #0D1456;
+    margin: .6rem 0;
+    border: .1rem solid rgba(0, 0, 0, 0.3);
+    text-transform: none;
+}
+
+.login-form-container form .box:focus {
+    border-color: var(--orange);
+}
+
+.login-form-container form #remember {
+    margin: 2rem 0;
+}
+
+.login-form-container form label {
+    font-size: 1.5rem;
+}
+
+.login-form-container form .btn {
+    display: block;
+    width: 100%;
+}
+
+.login-form-container form .p {
+    padding: 5rem 0;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.login-form-container form p a {
+    color: var(--orange);
+}
+
+.login-form-container form p a:hover {
+    color: #0D1456;
+    text-decoration: underline;
+}
+
+.login-form-container #form-close {
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    font-size: 5rem;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#menu-bar {
+    color: #fff;
+    border: 1rem solid #fff;
+    border-radius: .5rem;
+    font-size: 3rem;
+    padding: .5rem 1.2rem;
+    cursor: pointer;
+    /* display: none; */
+}
+
+/* body {
+    height: 300rem;
+
+} */
+
+
+/* Style the card title */
+
+.card-title {
+    color: #fff;
+    /* Text color */
+    font-size: 20px;
+    /* Font size */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    /* Font weight */
+}
+
+
+/* Style the card text */
+
+.card-text {
+    color: #fff;
+    /* Text color */
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Siyam Rupali', Arial, Helvetica, sans-serif;  
+    text-align: center;
+}
+.btn-center {
+    display: flex;
+    justify-content: center;
+    
+}
+.btn-primary {
+    background-color: var(--orange);
+    color: #0D1456;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+    font-weight: bold;
+ 
+}
+
+.btn-primary:hover {
+    background-color: white;
+    font-weight: bold;
+}
+
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: #0D1456;
+}
+
+/* .card:hover {
+    background: var(--orange);
+    color: #fff;
+} */
+
+
+/* Style the row container */
+
+.row {
+    display: flex;
+    /* Display as flex container */
+    flex-wrap: wrap;
+    /* Allow wrapping of columns */
+    margin-left: 15px;
+    /* Negative margin to counteract padding of columns */
+    margin-right: 15px;
+    /* Negative margin to counteract padding of columns */
+    margin-top: 50px;
+    /* Add margin to the top */
+}
+
+
+/* Style the column container */
+
+.col-sm-6 {
+    flex: 0 0 50%;
+    /* Take up 50% of the row width */
+    max-width: 50%;
+    /* Maximum width of 50% */
+    padding: 0 15px;
+    /* Padding */
+}
+
+.section-heading {
+    margin-top: 150px;
+    /* Adjust margin top as needed */
+    margin-left: auto;
+    color: #0D1456;
+    margin-right: auto;
+    /* Align right */
+    text-align: center;
+    /* Center align text */
+}
+
+
+/* Adjustments for smaller screens */
+
+@media (max-width: 768px) {
+    .col-sm-6 {
+        flex: 0 0 100%;
+        /* Take up 100% of the row width on smaller screens */
+        max-width: 100%;
+        /* Maximum width of 100% on smaller screens */
+    }
+}
+
+
+/* Media Queries */
+
+@media(max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+    header .icons .login-btn {
+        font-size: 14px;
+    }
+    .padding-container {
+        padding: 200px 20px;
+    }
+    .HireMebtn {
+        font-size: 1.2em;
+    }
+}
+
+@media(max-width:991px) {
+    header {
+        padding: 2rem;
+    }
+    section {
+        padding: 2rem;
+    }
+    header .icons .signup-btn,
+    header .icons .login-btn {
+        font-size: 12px;
+    }
+    .padding-container {
+        padding: 150px 20px;
+    }
+    .HireMebtn {
+        font-size: 1em;
+    }
+}
+
+@media(max-width:768px) {
+    #menu-bar {
+        display: initial;
+    }
+    header .navbar {
+        position: absolute;
+        top: 90%;
+        right: 0;
+        left: 0;
+        background: #0D1456;
+        border-top: .1rem solid rgba(255, 255, 255, .2);
+        padding: 1rem 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar a {
+        display: block;
+        border-radius: .5rem;
+        padding: 1rem;
+        margin: 1.5rem 0;
+        background: #0D1456;
+    }
+    header .icons .login-btn {
+        font-size: 10px;
+    }
+    /* Footer */
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        border-radius: 0;
+    }
+    .footer .footer-row {
+        padding: 20px;
+        gap: 1rem;
+    }
+    .footer-col form {
+        display: block;
+    }
+    .footer-col form :where(input,
+    button) {
+        width: 100%;
+    }
+    .footer-col form button {
+        margin: 10px 0 0 0;
+    }
+    .padding-container {
+        padding: 100px 20px;
+    }
+    .service {
+        flex: 0 1 calc(50% - 20px);
+    }
+    .HireMebtn {
+        font-size: 0.8em;
+    }
+    .about-me .about-me p {
+        font-size: 12px;
+    }
+}
+
+@media(max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+    .heading span {
+        font-size: 2.5rem;
+    }
+    header .icons .login-btn {
+        font-size: 8px;
+    }
+    .about-me .about-me p {
+        font-size: 10px;
+        /* Decreased font size for smaller screens */
+    }
+}
+
+@media (max-width: 1024px) {
+    .HeroImageLogo {
+        font-size: 14px;
+    }
+    .HeroImageLogo h1 {
+        font-size: 20px;
+    }
+    .HeroImageLogo p {
+        font-size: 14px;
+    }
+    .HeroImageLogo button {
+        padding: 8px 50px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 768px) {
+    .HeroImageLogo {
+        font-size: 12px;
+    }
+    .HeroImageLogo h1 {
+        font-size: 18px;
+    }
+    .HeroImageLogo p {
+        font-size: 12px;
+    }
+    .HeroImageLogo button {
+        padding: 6px 40px;
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 480px) {
+    .HeroImageLogo {
+        font-size: 10px;
+    }
+    .HeroImageLogo h1 {
+        font-size: 16px;
+    }
+    .HeroImageLogo p {
+        font-size: 10px;
+    }
+    .HeroImageLogo button {
+        padding: 4px 30px;
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .service {
+        padding: 20px;
+    }
+}
+
+@media(max-width: 576px) {
+    .container {
+        width: 95%;
+    }
+    .service {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,582 @@
+                    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+                     :root {
+                        --orange: #ffa500;
+                        --mycolor: #0D1456;
+                    }
+                    
+                    * {
+                        font-family: 'Nunito', sans-serif;
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                        text-transform: capitalize;
+                        outline: none;
+                        border: none;
+                        text-decoration: none;
+                        transition: all .2s linear;
+                    }
+                    
+                     ::selection {
+                        background: var(--orange);
+                        color: white;
+                    }
+                    
+                    html {
+                        font-size: 62.5%;
+                        overflow-x: hidden;
+                        scroll-padding-top: 6rem;
+                        scroll-behavior: smooth;
+                    }
+                    
+                    section {
+                        padding: 2rem 9%;
+                    }
+                    
+                    .heading {
+                        text-align: center;
+                        padding: 2.5rem 0;
+                    }
+                    
+                    .heading span {
+                        font-size: 3.5rem;
+                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                        color: var(--mycolor);
+                        border-radius: .5rem;
+                        padding: .2rem 1rem;
+                    }
+                    
+                    .btn {
+                        display: inline-block;
+                        margin-top: 1rem;
+                        background: var(--orange);
+                        color: #ffffff;
+                        padding: .8rem 3rem;
+                        cursor: pointer;
+                        border-radius: 3rem;
+                        font-size: 1.7rem;
+                    }
+                    
+                    .btn:hover {
+                        background: var(--mycolor);
+                    }
+                    
+                    header {
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        margin-left: auto;
+                        margin-right: auto;
+                        background: #0D1456;
+                        z-index: 1000;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 2rem 20%;
+                        align-items: center;
+                    }
+                    
+                    header .logo {
+                        font-size: 2.5rem;
+                        font-weight: bolder;
+                        color: #ffff;
+                        margin-left: 10px;
+                    }
+                    
+                    header .logo span {
+                        color: var(--orange);
+                    }
+                    
+                    header .navbar a {
+                        color: #ffffff;
+                        font-size: 2rem;
+                        margin: .8rem;
+                    }
+                    
+                    header .navbar a {
+                        color: #ffffff;
+                        font-size: bold;
+                        margin-right: 10px;
+                        text-decoration: none;
+                    }
+                    
+                    header .navbar a:hover {
+                        color: var(--orange);
+                    }
+                    
+                    header .icons i {
+                        font-size: 2.5rem;
+                        color: #fff;
+                        cursor: pointer;
+                        margin-right: 2rem;
+                    }
+                    
+                    header .icons i:hover {
+                        color: var(--orange);
+                    }
+                    
+                    .login-form-container {
+                        position: fixed;
+                        top: -120%;
+                        left: 0;
+                        z-index: 10000;
+                        min-height: 100vh;
+                        width: 100%;
+                        background: #0D1456;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    
+                    .login-form-container.active {
+                        top: 0;
+                    }
+                    
+                    .login-form-container form {
+                        margin: 2rem;
+                        padding: 1.5rem 2rem;
+                        border-radius: .5rem;
+                        background: #FFFFFF;
+                        width: 50rem;
+                    }
+                    
+                    .login-form-container form h3 {
+                        font-size: 3rem;
+                        color: #0D1456;
+                        text-transform: unset;
+                        text-align: center;
+                        padding: 1rem 0;
+                    }
+                    
+                    .login-form-container form .box {
+                        width: 100%;
+                        padding: 1rem;
+                        font-size: 1.7rem;
+                        color: #0D1456;
+                        margin: .6rem 0;
+                        border: .1rem solid rgba(0, 0, 0, 0.3);
+                        text-transform: none;
+                    }
+                    
+                    .login-form-container form .box:focus {
+                        border-color: var(--orange);
+                    }
+                    
+                    .login-form-container form #remember {
+                        margin: 2rem 0;
+                    }
+                    
+                    .login-form-container form label {
+                        font-size: 1.5rem;
+                    }
+                    
+                    .login-form-container form .btn {
+                        display: block;
+                        width: 100%;
+                    }
+                    
+                    .login-form-container form .p {
+                        padding: 5rem 0;
+                        font-size: 1.5rem;
+                        color: black;
+                    }
+                    
+                    .login-form-container form p a {
+                        color: var(--orange);
+                    }
+                    
+                    .login-form-container form p a:hover {
+                        color: #0D1456;
+                        text-decoration: underline;
+                    }
+                    
+                    .login-form-container #form-close {
+                        position: absolute;
+                        top: 2rem;
+                        right: 3rem;
+                        font-size: 5rem;
+                        color: #FFFFFF;
+                        cursor: pointer;
+                    }
+                    
+                    #menu-bar {
+                        color: #fff;
+                        border: 1rem solid #fff;
+                        border-radius: .5rem;
+                        font-size: 3rem;
+                        padding: .5rem 1.2rem;
+                        cursor: pointer;
+                        /* display: none; */
+                    }
+                    
+                    /* body {
+                        height: 300rem;
+                    } */
+                    /* Footer Section */
+                    /* Hero Image */
+                    
+                    .HeroImageLogo {
+                        position: absolute;
+                        left: 50%;
+                        top: 20%;
+                        transform: translate(-50%, -50%);
+                        color: #0D1456;
+                        align-items: center;
+                        text-align: center;
+                        font-size: 16px;
+                    }
+                    
+                    .HeroImageLogo h1 {
+                        font-size: 3rem;
+                        margin-bottom: 10px;
+                        margin-top: 50px;
+                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    }
+                    
+                    .HeroImageLogo p {
+                        font-size: 16px;
+                        margin-bottom: 20px;
+                    }
+                    /* .HeroImageLogo button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        top: auto;
+        padding: 10px 60px;
+        color: #fff;
+        background: var(--mycolor);
+        text-align: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 1.2rem;
+        border-radius: 1rem;
+    } */
+                    
+                    .HeroImageLogo button {
+                        padding: 10px 20px;
+                        font-size: 1.2em;
+                        background-color: #0D1456;
+                        color: #fff;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+                    
+                    .HeroImageLogo button:hover {
+                        background-color: var(--orange);
+                        color: white;
+                    }
+                    /* Our Services */
+                    
+                    .Our-Services {
+                        /* padding: 300px 20px; */
+                        margin-top: 300px;
+                        /* Add padding to top and bottom */
+                        background-color: #FFF;
+                        /* Light gray background */
+                        text-align: center;
+                    }
+                    
+                    .Our-Services h1 {
+                        font-size: 2em;
+                        margin-bottom: 30px;
+                        color: #0D1456;
+                    }
+                    
+                    .conteiner {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        /* Allow items to wrap onto multiple lines */
+                        margin: 0 -10px;
+                    }
+                    /* .service {
+                    text-align: center;
+                    margin: 10px;
+                    background-color: #fff;
+                    padding: 30px 20px;
+                    cursor: pointer;
+                } */
+                    
+                    .service {
+                        flex: 1;
+                        margin: 10px;
+                        /* Add margin around service items */
+                        padding: 15px;
+                        background-color: #fff;
+                        border-radius: 5px;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                        transition: box-shadow 0.3s ease;
+                        /* Add shadow */
+                    }
+                    
+                    .service:hover {
+                        background-color: var(--mycolor);
+                        color: white;
+                        /* Increase box shadow on hover */
+                    }
+                    
+                    .service i {
+                        font-size: 2em;
+                        margin-bottom: 10px;
+                    }
+                    
+                    .service h2 {
+                        font-size: 1.2em;
+                    }
+                    
+                    .padding-container {
+                        padding: 300px 20px;
+                        background-color: #f2f2f2;
+                        text-align: center;
+                    }
+                    /* Abut Me Section */
+                    
+                    #about-section {
+                        padding: 20px;
+                        display: gird;
+                        text-align: center;
+                    }
+                    
+                    .about-content {
+                        margin: 20px 0;
+                    }
+                    
+                    .description {
+                        color: #0D1456;
+                        margin: 20px 0;
+                        font-size: 18px;
+                        line-height: 30px;
+                    }
+                    
+                    .about-content .HireMebtn {
+                        padding: 10px 20px;
+                        font-size: 2rem;
+                        background-color: #0D1456;
+                        color: #fff;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        align-items: center;
+                    }
+                    
+                    .HireMebtn:hover {
+                        background-color: var(--orange);
+                        color: white;
+                    }
+                    
+                    .about-me {
+                        background-color: #0D1456;
+                        border-radius: 10px;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                        padding: 20px;
+                        max-width: 600px;
+                        margin: 50px auto;
+                        font-size: 18px;
+                        color: #FFF;
+                    }
+                    
+                    .about-me:hover {
+                        background-color: var(--orange);
+                    }
+                    
+                    .about-me .about-me p {
+                        margin-bottom: 10px;
+                        font-size: 15px;
+                        color: #fff;
+                    }
+                    
+                    .about-me strong {
+                        font-weight: bold;
+                    }
+                    /* .content {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    
+                    .content p {
+                        font-size: 2rem;
+                        color: #0D1456;
+                        text-align: center;
+                    } */
+                    /* Meadia Queries*/
+                    
+                    @media(max-width: 1200px) {
+                        html {
+                            font-size: 55%;
+                        }
+                        header .icons .login-btn {
+                            font-size: 14px;
+                        }
+                        .padding-container {
+                            padding: 200px 20px;
+                        }
+                        .HireMebtn {
+                            font-size: 1.2em;
+                        }
+                    }
+                    
+                    @media(max-width:991px) {
+                        header {
+                            padding: 2rem;
+                        }
+                        section {
+                            padding: 2rem;
+                        }
+                        header .icons .signup-btn,
+                        header .icons .login-btn {
+                            font-size: 12px;
+                        }
+                        .padding-container {
+                            padding: 150px 20px;
+                        }
+                        .HireMebtn {
+                            font-size: 1em;
+                        }
+                    }
+                    
+                    @media(max-width:768px) {
+                        #menu-bar {
+                            display: initial;
+                        }
+                        header .navbar {
+                            position: absolute;
+                            top: 90%;
+                            right: 0;
+                            left: 0;
+                            background: #0D1456;
+                            border-top: .1rem solid rgba(255, 255, 255, .2);
+                            padding: 1rem 2rem;
+                            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                        }
+                        header .navbar.active {
+                            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                        }
+                        header .navbar a {
+                            display: block;
+                            border-radius: .5rem;
+                            padding: 1rem;
+                            margin: 1.5rem 0;
+                            background: #0D1456;
+                        }
+                        header .icons .login-btn {
+                            font-size: 10px;
+                        }
+                        /* Footer */
+                        .footer {
+                            position: fixed;
+                            bottom: 0;
+                            left: 0;
+                            transform: none;
+                            width: 100%;
+                            border-radius: 0;
+                        }
+                        .footer .footer-row {
+                            padding: 20px;
+                            gap: 1rem;
+                        }
+                        .footer-col form {
+                            display: block;
+                        }
+                        .footer-col form :where(input,
+                        button) {
+                            width: 100%;
+                        }
+                        .footer-col form button {
+                            margin: 10px 0 0 0;
+                        }
+                        .padding-container {
+                            padding: 100px 20px;
+                        }
+                        .service {
+                            flex: 0 1 calc(50% - 20px);
+                        }
+                        .HireMebtn {
+                            font-size: 0.8em;
+                        }
+                        .about-me .about-me p {
+                            font-size: 12px;
+                        }
+                    }
+                    
+                    @media(max-width:450px) {
+                        html {
+                            font-size: 50%;
+                        }
+                        .heading span {
+                            font-size: 2.5rem;
+                        }
+                        header .icons .login-btn {
+                            font-size: 8px;
+                        }
+                        .about-me .about-me p {
+                            font-size: 10px;
+                            /* Decreased font size for smaller screens */
+                        }
+                    }
+                    
+                    @media (max-width: 1024px) {
+                        .HeroImageLogo {
+                            font-size: 14px;
+                        }
+                        .HeroImageLogo h1 {
+                            font-size: 20px;
+                        }
+                        .HeroImageLogo p {
+                            font-size: 14px;
+                        }
+                        .HeroImageLogo button {
+                            padding: 8px 50px;
+                            font-size: 16px;
+                        }
+                    }
+                    
+                    @media(max-width: 768px) {
+                        .HeroImageLogo {
+                            font-size: 12px;
+                        }
+                        .HeroImageLogo h1 {
+                            font-size: 18px;
+                        }
+                        .HeroImageLogo p {
+                            font-size: 12px;
+                        }
+                        .HeroImageLogo button {
+                            padding: 6px 40px;
+                            font-size: 14px;
+                        }
+                    }
+                    
+                    @media(max-width: 480px) {
+                        .HeroImageLogo {
+                            font-size: 10px;
+                        }
+                        .HeroImageLogo h1 {
+                            font-size: 16px;
+                        }
+                        .HeroImageLogo p {
+                            font-size: 10px;
+                        }
+                        .HeroImageLogo button {
+                            padding: 4px 30px;
+                            font-size: 12px;
+                        }
+                    }
+                    
+                    @media(max-width: 768px) {
+                        .container {
+                            width: 90%;
+                        }
+                        .service {
+                            padding: 20px;
+                        }
+                    }
+                    
+                    @media(max-width: 576px) {
+                        .container {
+                            width: 95%;
+                        }
+                        .service {
+                            padding: 15px;
+                        }
+                    }
